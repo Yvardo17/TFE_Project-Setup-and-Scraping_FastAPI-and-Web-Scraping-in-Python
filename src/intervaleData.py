@@ -6,7 +6,7 @@ def defInterval() -> Dict:
     Interval = dict()
     taille = dict()
 
-    for i in range(1, 4000, 50):
+    for i in range(1, 8000, 50):
         #print(i)
         Interval[i] = i
         
@@ -22,5 +22,5 @@ def defInterval() -> Dict:
 
 if __name__=="__main__":
     taille = defInterval()
-    with open("taille.json", "w") as taille_file:
+    with open("taille.json", "a") as taille_file:
         _json.dump(taille, taille_file, ensure_ascii=False)
